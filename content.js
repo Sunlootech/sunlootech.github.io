@@ -41,7 +41,7 @@ const siteContent = {
       "100+ containers purchased and shipped every year in the past 3 years",
       "Customer-focused service built through 16+ years of experience"
     ],
-    "image": "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Sunloo%20Logo.png"
+    "image": "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Sunloo%20Logo.jpg"
   },
 
   "services": {
@@ -136,27 +136,27 @@ const siteContent = {
   "images": [
     [
       "Perfume Package",
-      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/perfume%20package.png"
+      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/perfume%20package.jpg"
     ],
     [
       "Christmas Trees",
-      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Christmas%20Trees2.png"
+      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Christmas%20Trees2.jpg"
     ],
     [
       "Plant Stand Pipe",
-      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Plant%20Stand%20Pipe%20.png"
+      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Plant%20Stand%20Pipe%20.jpg"
     ],
     [
       "Massage Chair",
-      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Massage%20Chair.png"
+      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Massage%20Chair.jpg"
     ],
     [
       "Dressing Table",
-      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Dressing%20table.png"
+      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Dressing%20table.jpg"
     ],
     [
       "Christmas Trees",
-      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Christmas%20Trees.png"
+      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Christmas%20Trees.jpg"
     ]
   ]
 },

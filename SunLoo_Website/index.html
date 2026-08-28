@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SunLoo</title><style>
+:root{--navy:#071b33;--navy2:#0d2948;--gold:#c7a76a;--cream:#f6f3ed;--white:#fff;--text:#243447;--muted:#6f7b87}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.6}a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}nav{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(7,27,51,.94);backdrop-filter:blur(8px);color:#fff}.navin{height:74px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:26px;font-weight:800;letter-spacing:2px}.logo span{color:var(--gold)}.navlinks{display:flex;gap:28px;font-size:14px}.navlinks a:hover{color:var(--gold)}.btn{display:inline-block;padding:13px 22px;border-radius:3px;font-weight:700;font-size:14px;border:1px solid var(--gold);background:var(--gold);color:var(--navy);cursor:pointer}.btn.outline{background:transparent;color:#fff}.btn:hover{opacity:.9}.hero{min-height:720px;padding-top:74px;background-position:center;background-size:cover;display:flex;align-items:center;color:#fff}.hero h1{font-size:clamp(42px,6vw,76px);line-height:1.02;margin:0 0 24px;max-width:800px}.hero h1 span{color:var(--gold)}.hero p{font-size:20px;max-width:650px;color:#e7edf3;margin-bottom:34px}.actions{display:flex;gap:14px;flex-wrap:wrap}.stats{background:var(--navy);color:#fff}.statgrid{display:grid;grid-template-columns:repeat(5,1fr)}.stat{padding:28px 16px;text-align:center;border-right:1px solid rgba(255,255,255,.12)}.stat strong{display:block;font-size:31px;color:var(--gold)}.stat small{color:#dbe3ea}section{padding:95px 0}.eyebrow{color:var(--gold);font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.title{font-size:42px;line-height:1.15;color:var(--navy);margin:10px 0 20px}.lead{color:var(--muted);max-width:720px;font-size:17px}.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about img{width:100%;height:470px;object-fit:cover;border-radius:4px}.check{margin:20px 0 0;padding:0;list-style:none}.check li{margin:12px 0}.check li:before{content:"✓";color:var(--gold);font-weight:bold;margin-right:10px}.services{background:var(--cream)}.grid6{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:42px}.card{background:#fff;padding:30px;min-height:210px;border-top:3px solid var(--gold);box-shadow:0 8px 30px rgba(7,27,51,.06)}.num{font-size:13px;color:var(--gold);font-weight:800}.card h3{color:var(--navy);margin:9px 0}.card p{color:var(--muted);font-size:14px}.productgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}.product{position:relative;min-height:270px;overflow:hidden;border-radius:3px;background:#ddd}.product img{width:100%;height:100%;object-fit:cover;transition:.4s}.product:hover img{transform:scale(1.05)}.product .label{position:absolute;left:0;right:0;bottom:0;padding:22px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.85));font-size:19px;font-weight:700}.why{background:var(--navy);color:#fff}.why .title{color:#fff}.compare{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(255,255,255,.15)}.compare>div{padding:30px}.compare .factory{background:rgba(255,255,255,.04)}.compare h3{margin-top:0;color:var(--gold)}.compare li{margin:12px 0;color:#dbe3ea} .gallery{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+  margin-top:40px;
+  align-items:start;
+}
+.gallery .item{
+  background:#fff;
+  border-radius:4px;
+  overflow:hidden;
+  box-shadow:0 8px 30px rgba(7,27,51,.08);
+}
+.gallery .item img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.gallery .item p{
+  margin:0;
+  padding:14px 18px 16px;
+  font-size:16px;
+  font-weight:700;
+  color:var(--navy);
+}
+.cta{background:linear-gradient(120deg,var(--navy),var(--navy2));color:#fff;text-align:center}.cta .title{color:#fff}.cta p{color:#dbe3ea;margin:0 auto 30px}.cta .btn{margin:5px}footer{background:#041322;color:#b9c5d0;padding:55px 0 25px}.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px}.foot h3{color:#fff}.foot .brand{font-size:25px;color:#fff;font-weight:800;letter-spacing:2px}.copy{border-top:1px solid rgba(255,255,255,.1);margin-top:35px;padding-top:20px;font-size:12px}.editor-link{position:fixed;bottom:12px;right:12px;z-index:20;font-size:11px;padding:8px 10px;background:#fff;border:1px solid #ddd;color:#666;border-radius:3px;opacity:.35}.editor-link:hover{opacity:1}@media(max-width:850px){
+  .navlinks{display:none}
+  .statgrid{grid-template-columns:repeat(2,1fr)}
+  .stat:last-child{grid-column:span 2}
+  .about,.grid6,.productgrid,.foot{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+  .hero{min-height:650px}
+  .title{font-size:34px}
+}</style></head><body><nav><div class="container navin"><div class="logo" id="brand"></div><div class="navlinks"><a href="#about" id="navAbout"></a><a href="#services" id="navServices"></a><a href="#products" id="navProducts"></a><a href="#why" id="navWhy"></a><a href="#work" id="navWork"></a><a href="#contact" id="navContact"></a></div><a class="btn" href="#contact" id="navCta"></a></div></nav>
+<header class="hero" id="hero"><div class="container"><div class="eyebrow" id="heroEyebrow"></div><h1><span id="heroBefore"></span> <span id="heroHighlight"></span> <span id="heroAfter"></span></h1><p id="heroDesc"></p><div class="actions"><a class="btn" href="#contact" id="heroPrimary"></a><a class="btn outline" href="#services" id="heroSecondary"></a></div></div></header>
+<div class="stats"><div class="container statgrid" id="stats"></div></div>
+<section id="about"><div class="container about"><div><div class="eyebrow" id="aboutEyebrow"></div><h2 class="title" id="aboutTitle"></h2><p class="lead" id="aboutDesc"></p><ul class="check" id="aboutBullets"></ul></div><img id="aboutImage" alt="China sourcing and logistics"></div></section>
+<section id="services" class="services"><div class="container"><div class="eyebrow" id="servicesEyebrow"></div><h2 class="title" id="servicesTitle"></h2><p class="lead" id="servicesDesc"></p><div class="grid6" id="servicesGrid"></div></div></section>
+<section id="products"><div class="container"><div class="eyebrow" id="productsEyebrow"></div><h2 class="title" id="productsTitle"></h2><p class="lead" id="productsDesc"></p><div class="productgrid" id="productsGrid"></div></div></section>
+<section id="why" class="why"><div class="container"><div class="eyebrow" id="whyEyebrow"></div><h2 class="title" id="whyTitle"></h2><div class="compare"><div class="factory"><h3>Traditional Factory</h3><ul id="factoryList"></ul></div><div><h3>SunLoo</h3><ul id="sunlooList"></ul></div></div></div></section>
+<section id="work"><div class="container"><div class="eyebrow" id="workEyebrow"></div><h2 class="title" id="workTitle"></h2><p class="lead" id="workDesc"></p><div class="gallery" id="gallery"></div></div></section>
+<section class="cta" id="contact"><div class="container"><div class="eyebrow" id="contactEyebrow"></div><h2 class="title" id="contactTitle"></h2><p class="lead" id="contactDesc"></p><a class="btn" id="emailBtn"></a><a class="btn outline" id="whatsappBtn">WhatsApp Us</a></div></section>
+<footer><div class="container foot"><div><div class="brand" id="footerBrand"></div><p id="footerCompany"></p></div><div><h3>Office</h3><p id="footerOffice"></p></div><div><h3>Contact</h3><p id="footerContact"></p></div></div><div class="container copy" id="copyright"></div></footer><a class="editor-link" href="editor.html" title="Open content editor">Edit website</a>
+<script src="content.js"></script><script>
+const c=siteContent, $=id=>document.getElementById(id); const br= s => (s||'').replace(/\n/g,'<br>');
+$('brand').innerHTML=c.brand.slice(0,3)+'<span>'+c.brand.slice(3)+'</span>'; $('navAbout').textContent=c.nav.about;$('navServices').textContent=c.nav.services;$('navProducts').textContent=c.nav.products;$('navWhy').textContent=c.nav.why;$('navWork').textContent=c.nav.work;$('navContact').textContent=c.nav.contact;$('navCta').textContent=c.nav.cta;
+$('hero').style.backgroundImage=`linear-gradient(90deg,rgba(5,20,37,.96),rgba(5,20,37,.72),rgba(5,20,37,.25)),url("${c.hero.image}")`; $('heroEyebrow').textContent=c.hero.eyebrow;$('heroBefore').textContent=c.hero.titleBefore;$('heroHighlight').textContent=c.hero.titleHighlight;$('heroAfter').textContent=c.hero.titleAfter;$('heroDesc').textContent=c.hero.description;$('heroPrimary').textContent=c.hero.primary;$('heroSecondary').textContent=c.hero.secondary;
+$('stats').innerHTML=c.stats.map(x=>`<div class="stat"><strong>${x[0]}</strong><small>${x[1]}</small></div>`).join(''); $('aboutEyebrow').textContent=c.about.eyebrow;$('aboutTitle').textContent=c.about.title;$('aboutDesc').textContent=c.about.description;$('aboutBullets').innerHTML=c.about.bullets.map(x=>`<li>${x}</li>`).join('');$('aboutImage').src=c.about.image;
+$('servicesEyebrow').textContent=c.services.eyebrow;$('servicesTitle').textContent=c.services.title;$('servicesDesc').textContent=c.services.description;$('servicesGrid').innerHTML=c.services.items.map((x,i)=>`<div class="card"><div class="num">${String(i+1).padStart(2,'0')}</div><h3>${x[0]}</h3><p>${x[1]}</p></div>`).join('');
+$('productsEyebrow').textContent=c.products.eyebrow;$('productsTitle').textContent=c.products.title;$('productsDesc').textContent=c.products.description;$('productsGrid').innerHTML=c.products.items.map(x=>`<div class="product"><img src="${x[1]}" alt="${x[0]}"><div class="label">${x[0]}</div></div>`).join('');
+$('whyEyebrow').textContent=c.why.eyebrow;$('whyTitle').textContent=c.why.title;$('factoryList').innerHTML=c.why.factory.map(x=>`<li>${x}</li>`).join('');$('sunlooList').innerHTML=c.why.sunloo.map(x=>`<li>${x}</li>`).join('');
+$('workEyebrow').textContent=c.work.eyebrow;
+$('workTitle').textContent=c.work.title;
+$('workDesc').textContent=c.work.description;
+$('gallery').innerHTML=(c.work.images||[]).map((x,i)=>{
+  const url=Array.isArray(x)?x[1]:x;
+  const name=Array.isArray(x)?x[0]:'';
+  return `<div class="item">
+    <img src="${url}" alt="${name||`SunLoo project ${i+1}`}">
+    ${name?`<p>${name}</p>`:''}
+  </div>`;
+}).join('');
+$('contactEyebrow').textContent=c.contact.eyebrow;$('contactTitle').textContent=c.contact.title;$('contactDesc').textContent=c.contact.description;$('emailBtn').textContent='Email Us';$('emailBtn').href='mailto:'+c.contact.email;$('whatsappBtn').href='https://wa.me/'+c.contact.whatsapp;$('footerBrand').textContent=c.brand;$('footerCompany').innerHTML=c.footer.company+'<br>'+c.footer.tagline;$('footerOffice').innerHTML=br(c.footer.office);$('footerContact').innerHTML='Mobile: '+c.footer.mobile+'<br>WhatsApp: +'+c.contact.whatsapp+'<br>Email: '+c.footer.email;$('copyright').textContent=c.footer.copyright;document.title=c.title;
+</script></body></html>

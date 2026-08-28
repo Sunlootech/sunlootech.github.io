@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>SunLoo Product</title><style>body{font-family:Arial;margin:0;color:#333}.head{background:#f28c28;color:white;padding:30px}.container{width:90%;max-width:1100px;margin:auto}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.item{border:1px solid #ddd;padding:15px}.item img{width:100%;height:220px;object-fit:cover}.price{color:#f28c28;font-weight:bold}@media(max-width:800px){.grid{grid-template-columns:1fr}}</style></head><body><div class="head"><div class="container"><h1 id="title">Product Range</h1><p>SunLoo China Sourcing</p></div></div><div class="container"><div class="grid" id="list"></div></div><script src="content.js"></script><script>let id=new URLSearchParams(location.search).get('id')||0;let p=siteContent.products.items[id];document.getElementById('title').innerHTML=p[0];document.getElementById('list').innerHTML=`<div class="item"><img src="${p[1]}"><h2>${p[0]}</h2><p class="price">Price: Contact us</p><p>MOQ: Please contact SunLoo team.</p><p>Upload your product photos, quotation and specifications in editor.html.</p><button onclick="location.href='mailto:sales@sunlootech.com'">Send Inquiry</button></div>`;</script>
+<section class="quote-box">
+<h2>Request Quote</h2>
+<p>Tell us your requirements and our sourcing team will contact you.</p>
+
+<form action="mailto:sales3@sunlootech.com" method="post" enctype="text/plain">
+<label>Name / Contact Person</label><br>
+<input type="text" name="name" required><br>
+
+<label>Company Name</label><br>
+<input type="text" name="company"><br>
+
+<label>Email</label><br>
+<input type="email" name="email" required><br>
+
+<label>Product & Quantity Required</label><br>
+<textarea name="requirement" rows="5"></textarea><br>
+
+<button type="submit">Send Inquiry</button>
+</form>
+</section>
+
+</body></html>

@@ -136,7 +136,7 @@ const siteContent = {
   "images": [
     [
       "Perfume Package",
-      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/perfume%20package.jpg"
+      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Perfume%20Package.jpg"
     ],
     [
       "Christmas Trees",
@@ -152,7 +152,7 @@ const siteContent = {
     ],
     [
       "Dressing Table",
-      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Dressing%20table.jpg"
+      "https://raw.githubusercontent.com/Sunlootech/Sunloo-images/main/Dressing%20Table.jpg"
     ],
     [
       "Christmas Trees",
